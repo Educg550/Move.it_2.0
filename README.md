@@ -6,7 +6,7 @@ Projeto da Rocketseat da semana #4: Move.it - aplicação para foco e bem-estar 
 * ⚛️ ReactJS - Framework para a criação de interfaces modernas, fluidas e com design responsivo em diversos dispositivos, utilizando JavaScript
 * 🇳 NextJS - Framework para ampliação nas funcionalidades e componentes dentro do ambiente ReactJS
 
-## Como Executar
+## ❓ Como Executar
 Primeiramente, é necessário ter o [Git](https://git-scm.com/downloads), o [Node.js](https://nodejs.org/en/download/) e o [Yarn](https://yarnpkg.com/) instalados no seu sistema. Assim que esse pré-requisito for atendido, basta executar estes comandos, um a um, no seu Terminal ou Shell de preferência:
 
 ```
