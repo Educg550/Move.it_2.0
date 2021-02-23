@@ -1,8 +1,9 @@
 import styles from "../styles/components/Countdown.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Countdown() {
   const [time, setTime] = useState(25 * 60);
+  const [active, setActive] = useState(false);
 
   //Math.floor() - arredonda o número para sua versão menor (Ex: 1.5 se torna 1 ao invés de 2)
   const minutes = Math.floor(time / 60);
@@ -13,8 +14,16 @@ export function Countdown() {
   const [secondLeft, secondRight] = String(seconds).padStart(2, "0").split("");
 
   function startCountdown() {
-
+    setActive(!active);
   }
+
+  useEffect(() => {
+    if (active && time > 0) {
+      setTimeout(() => {
+        setTime(time - 1);
+      }, 1000)
+    }
+  }, [active, time])
 
   return (
     <div>
