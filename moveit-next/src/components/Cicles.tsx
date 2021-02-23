@@ -1,6 +1,8 @@
+import styles from '../styles/components/Cicles.module.css'
+
 export function Cicles () {
     return (
-        <div className="cicles-data">
+        <div className={styles.ciclesData}>
             <span>
                 Desafios Completos
             </span>
@@ -8,6 +10,5 @@ export function Cicles () {
                 00
             </span>
         </div>
-
     );
 }

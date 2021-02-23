@@ -1,9 +1,7 @@
 export function Header () {
     return (
         <header>
-            <img src="../../public/images/favicon.png" width="64px" height="64px"/>
-            <h1>Move.it</h1>            
+            <img src="logo-full.svg" width="200px" height="75px"/>          
         </header>
-
     );
 }

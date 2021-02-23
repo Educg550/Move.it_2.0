@@ -1,0 +1,32 @@
+/* CSS Modular - para cada componente em React há um arquivo .module.css que contem todas as suas regras específicas. Ajuda muito em trabalhos grandes com equipes, pois organiza melhor a estilização da página */
+
+.profileData {
+    display: flex;
+    align-items: center;
+}
+
+.profileData > img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 40px;
+}
+
+.profileData div {
+    margin-left: 1.5rem;
+}
+
+.profileData div strong {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.profileData div p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+}
+
+.profileData div p img {
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,27 @@
+/* CSS Modular - para cada componente em React há um arquivo .module.css que contem todas as suas regras específicas. Ajuda muito em trabalhos grandes com equipes, pois organiza melhor a estilização da página */
+
+
+.countdownContainer {
+    display: flex;
+    align-items: center;
+}
+
+.countdownContainer > div {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: var(--white);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.countdownContainer > div span {
+    font-size: 8.5rem;
+    font-family: Rajdhani;
+    font-weight: 600;
+    color: var(--title);
+}

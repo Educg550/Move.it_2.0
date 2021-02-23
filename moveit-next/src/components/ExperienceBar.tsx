@@ -6,7 +6,7 @@ import styles from '../styles/components/ExperienceBar.module.css'
 export function ExperienceBar() {
   return (
     // className não aceita hífen(-) !!!
-    <header className={styles.experienceBar}>
+    <div className={styles.experienceBar}>
       <span>0 XP</span>
       <div>
         <div style={{ width: "50%" }} />
@@ -15,6 +15,6 @@ export function ExperienceBar() {
         </span>
       </div>
       <span>600 XP</span>
-    </header>
+    </div>
   );
 }

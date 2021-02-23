@@ -1,0 +1,21 @@
+/* CSS Modular - para cada componente em React há um arquivo .module.css que contem todas as suas regras específicas. Ajuda muito em trabalhos grandes com equipes, pois organiza melhor a estilização da página */
+
+
+.container {
+    height: 100vh;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container section {
+    flex: 1;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    width: 50%;
+    gap: 2.25rem;
+    align-content: center;
+}

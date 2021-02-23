@@ -3,19 +3,20 @@ import { Header } from '../components/Header';
 import { ExperienceBar } from "../components/ExperienceBar";
 import { ProfileData } from "../components/ProfileData";
 import { Cicles } from "../components/Cicles";
+import { Countdown } from '../components/Countdown'
+import styles from "../styles/pages/Home.module.css"
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       {/* Componentes e suas propriedades declaradas e exportadas nos arquivos de mesmo nome dentro da pasta ./components */}
-      <header>
-        <Header />        
-      </header>
+        <Header />
+        <ExperienceBar />      
 
       <section>
-        <ExperienceBar />
         <ProfileData />
         <Cicles />
+        <Countdown />
       </section>
 
     </div>

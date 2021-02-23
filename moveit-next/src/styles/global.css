@@ -49,35 +49,3 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
-.container {
-    height: 100vh;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2.5rem 2rem;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-data {
-    margin: 5rem 0;
-    padding: auto 2rem;
-    display: flex;
-    flex-direction: row;
-}
-
-.profile-data > img {
-    border-radius: 40px;
-}
-
-.profile-data > span {
-    text-align: center;
-    vertical-align: middle;
-}
-
-.cicles-data {
-    display: flex;
-    flex-direction: row;
-    margin: 0 2rem;
-}

@@ -1,0 +1,21 @@
+/* CSS Modular - para cada componente em React há um arquivo .module.css que contem todas as suas regras específicas. Ajuda muito em trabalhos grandes com equipes, pois organiza melhor a estilização da página */
+
+.ciclesData {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 3.5rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d7d8da;
+
+    font-weight: 500;
+}
+
+.ciclesData span:first-child {
+    font-size: 1.25rem;
+}
+
+.ciclesData span:last-child {
+    font-size: 1.5rem;
+}
