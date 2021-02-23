@@ -9,6 +9,10 @@ import styles from "../styles/pages/Home.module.css"
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+        <title>Início | Move.it</title>
+      </Head>
       {/* Componentes e suas propriedades declaradas e exportadas nos arquivos de mesmo nome dentro da pasta ./components */}
         <Header />
         <ExperienceBar />      
