@@ -1,0 +1,31 @@
+/* CSS Modular - para cada componente em React há um arquivo .module.css que contem todas as suas regras específicas. Ajuda muito em trabalhos grandes com equipes, pois organiza melhor a estilização da página */
+
+.experienceBar {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+/* > indica apenas um nível de children, ou seja, essa regra vale apenas para os divs encontrados um nível abaixo da classe .experienceBar */
+.experienceBar > div {
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.experienceBar > div > div {
+    height: 4px;
+    border-radius: 4px;
+    background: var(--green);
+}
+
+span.currentExperience {
+    position: absolute;
+    top: 12px;
+    /* Centralização do XP atual na barra verde */
+    transform: translateX(-50%);
+}
+

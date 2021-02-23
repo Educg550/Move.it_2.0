@@ -4,7 +4,7 @@ Projeto da Rocketseat da semana #4: Move.it - aplicação para foco e bem-estar 
 ## 🖥️ Tecnologias Utilizadas
 
 * ⚛️ ReactJS - Framework para a criação de interfaces modernas, fluidas e com design responsivo em diversos dispositivos, utilizando JavaScript
-* 🇳 NextJS - Framework para ampliação nas funcionalidades e componentes dentro do ambiente ReactJS
+* 🇳 NextJS - Framework do React para melhora considerável na estrutura da página e para facilitar o contato com o Back-end
 
 ## ❓ Como Executar
 Primeiramente, é necessário ter o [Git](https://git-scm.com/downloads), o [Node.js](https://nodejs.org/en/download/) e o [Yarn](https://yarnpkg.com/) instalados no seu sistema. Assim que esse pré-requisito for atendido, basta executar estes comandos, um a um, no seu Terminal ou Shell de preferência:
@@ -14,7 +14,9 @@ git clone https://github.com/Educg550/Next_Level_Week_4.git
 
 cd Next_Level_Week_4
 
-yarn start
+cd moveit-next
+
+yarn dev
 ```
 
 Assim que o servidor for iniciado, ele será hospedado no seguinte endereço: ```localhost:3000```

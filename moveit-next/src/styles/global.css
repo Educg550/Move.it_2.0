@@ -60,28 +60,6 @@ a {
     flex-direction: column;
 }
 
-.experience-bar {
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
-}
-
-/* > indica apenas um nível de children, ou seja, essa regra vale apenas para os divs encontrados um nível abaixo da classe .experience-bar */
-.experience-bar > div {
-    flex: 1;
-    height: 4px;
-    border-radius: 4px;
-    background: var(--gray-line);
-    margin: 0 1.5rem;
-    position: relative;
-}
-
-.experience-bar > div > div {
-    height: 4px;
-    border-radius: 4px;
-    background: var(--green);
-}
-
 .profile-data {
     margin: 5rem 0;
     padding: auto 2rem;
@@ -96,13 +74,6 @@ a {
 .profile-data > span {
     text-align: center;
     vertical-align: middle;
-}
-
-span.current-experience {
-    position: absolute;
-    top: 12px;
-    /* Centralização do XP atual na barra verde */
-    transform: translateX(-50%);
 }
 
 .cicles-data {
