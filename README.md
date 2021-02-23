@@ -24,6 +24,9 @@ Assim que o servidor for iniciado, ele será hospedado no seguinte endereço: ``
 <br>
 Basta inserir este mesmo endereço no seu navegador de preferência e testar a aplicação.
 
-## Next Level Week 4
+## 📓 Caderno de Anotações
+Meu caderno com as anotações referentes ao conteúdo da Next Level Week #4 pode ser encontrado [neste link](https://www.notion.so/Next-Level-Week-4-7355b15061fa4a06a5ca9ee78fcd621d), utilizando a plataforma **Notion**.
+
+## 🚀 Next Level Week #4
 
 ![nlw4](https://miro.medium.com/max/2880/1*h3_SabTiv6Duw9sZnDE0Kg.jpeg "nlw4")
