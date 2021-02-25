@@ -4,7 +4,7 @@ Projeto da Rocketseat da semana #4: Move.it - aplicação para foco e bem-estar 
 ## 🖥️ Tecnologias Utilizadas
 
 * ⚛️ ReactJS - Framework para a criação de interfaces modernas, fluidas e com design responsivo em diversos dispositivos, utilizando JavaScript
-* 🇳 NextJS - Framework do React para melhora considerável na estrutura da página e para facilitar o contato com o Back-end
+* 🇳 NextJS - Framework do React para melhora considerável na estrutura da página e para facilitar a indexação e o contato com o Back-end
 * ⌨️ TypeScritpt - Linguagem de programação semelhante a JavaScript, com algumas funcionalidades a mais, que combinadas com ReactJS, fazem da aplicação ainda mais interativa e à prova de erros
 
 ## ❓ Como Executar

@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: center;
 
-    border: 0;
+    border: none;
     border-radius: 5px;
 
     background: var(--blue);
@@ -63,6 +63,26 @@
     transition: 0.2s;
 }
 
+.countdownButton:focus {
+    outline: none;
+}
+
 .countdownButton:hover {
     background: var(--blue-dark);
+}
+
+.countdownButtonActive {
+    background: var(--white);
+    color: var(--title);
+}
+
+.countdownButtonActive:hover {
+    background: var(--red);
+    color: var(--white);
+}
+
+.countdownButton:disabled {
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
 }
