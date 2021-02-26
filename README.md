@@ -1,6 +1,8 @@
 # 🥇 Move.it
 Projeto da Rocketseat da semana #4: Move.it - aplicação para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade (ciclos de 25 minutos de trabalho intenso e 5 minutos de descanso)
 
+![move.it](https://raw.githubusercontent.com/Educg550/Next_Level_Week_4/a5df0d85cf03f8ab55d8f8cf126314a4c2790c4e/moveit-next/public/logo-full.svg "move.it")
+
 ## 🖥️ Tecnologias Utilizadas
 
 * ⚛️ ReactJS - Framework para a criação de interfaces modernas, fluidas e com design responsivo em diversos dispositivos, utilizando JavaScript
@@ -29,4 +31,4 @@ Meu caderno com as anotações referentes ao conteúdo da Next Level Week #4 pod
 
 ## 🚀 Next Level Week #4
 
-![nlw4](https://miro.medium.com/max/2880/1*h3_SabTiv6Duw9sZnDE0Kg.jpeg "nlw4")
+![nlw4](https://instagram.fcgh10-1.fna.fbcdn.net/v/t51.2885-15/e35/152111451_981027065764653_76265124056744178_n.jpg?_nc_ht=instagram.fcgh10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=eeSwUwjQr-MAX9o9FHD&tp=1&oh=9c3acc7e745375d89166bd36ecea5c7a&oe=60635E22 "nlw4")
