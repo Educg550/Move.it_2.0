@@ -2,8 +2,6 @@
 import { useContext } from 'react';
 import { ChallengeContext } from '../contexts/ChallengeContext'
 import styles from '../styles/components/ExperienceBar.module.css'
-// import { useState } from "react";
-// const [xp, setXp] = useState(0);
 
 export function ExperienceBar() {
   const { currentExperience, experienceToNextLevel } = useContext(ChallengeContext);
