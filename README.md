@@ -17,8 +17,6 @@ git clone https://github.com/Educg550/Next_Level_Week_4.git
 
 cd Next_Level_Week_4
 
-cd moveit-next
-
 yarn
 
 yarn dev
@@ -27,6 +25,9 @@ yarn dev
 Assim que o servidor for iniciado, ele será hospedado no seguinte endereço: ```localhost:3000```
 <br>
 Basta inserir este mesmo endereço no seu navegador de preferência e testar a aplicação.
+<br>
+<br>
+Alternativamente, você pode abrir o projeto publicado na plataforma **Vercel**, clicando [aqui](https://moveit-react-nlw-zeta.vercel.app/)
 
 ## 📓 Caderno de Anotações
 Meu caderno com as anotações referentes ao conteúdo da Next Level Week #4 pode ser encontrado [neste link](https://www.notion.so/Next-Level-Week-4-7355b15061fa4a06a5ca9ee78fcd621d), utilizando a plataforma **Notion**.

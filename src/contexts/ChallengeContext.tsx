@@ -1,5 +1,6 @@
-import { createContext, useState, ReactNode, useEffect } from "react";
-// import Cookies from 'js-cookie';
+import React, { createContext, useState, ReactNode, useEffect } from "react";
+import { LevelUpModal } from "../components/LevelUpModal";
+import Cookies from "js-cookie";
 import challenges from "../../challenges.json";
 
 interface Challenge {
@@ -18,41 +19,53 @@ interface ChallengeContextData {
   resetChallenge: () => void;
   experienceToNextLevel: number;
   completeChallenge: () => void;
+  closeLevelUpModal: () => void;
 }
 
 // Definição do tipo de elemento children que será importado como argumento na função ChallengeProvider
 interface ChallengeProviderProps {
   children: ReactNode;
+  level: number;
+  currentExperience: number;
+  challengesCompleted: number;
 }
 
 // Criação do contexto ChallengeContext com base no formato da interface ChallengeContextData
 export const ChallengeContext = createContext({} as ChallengeContextData);
 
-export function ChallengeProvider({ children }: ChallengeProviderProps) {
-  const [level, setLevel] = useState(1);
-  const [currentExperience, setCurrentExperience] = useState(0);
-  const [challengesCompleted, setChallengesCompleted] = useState(0);
+// ...rest = rest operator - recebe o resto das propriedades de uma interface ou type
+export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps) {
+  // ?? - se não existir rest.level, ele colocará o valor da direita
+  const [level, setLevel] = useState(rest.level ?? 1);
+  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
+  const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
 
   const [activeChallenge, setActiveChallenge] = useState(null);
+  const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
   // Cálculo do XP necessário para subir de nível
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
-  // Executa a função uma única vez assim que o componente for exibido em tela, por conta do array vazio
+  // Executa a função uma única vez assim que o componente for exibido em tela, por conta do array [] vazio
   useEffect(() => {
     // Solicita permissão para exibir notificações, API do próprio Browser
     Notification.requestPermission();
   }, []);
 
-  // // Salva os dados nos cookies do navegador assim que eles mudam
-  // useEffect(() => {
-  //   Cookies.set('level', String(level));
-  //   Cookies.set('currentExperience', String(currentExperience));
-  //   Cookies.set('challengesCompleted', String(challengesCompleted));
-  // }, [level, currentExperience, challengesCompleted]);
+  // Salva os dados nos cookies do navegador assim que eles mudam
+  useEffect(() => {
+    Cookies.set("level", String(level));
+    Cookies.set("currentExperience", String(currentExperience));
+    Cookies.set("challengesCompleted", String(challengesCompleted));
+  }, [level, currentExperience, challengesCompleted]);
 
   function levelUp() {
     setLevel(level + 1);
+    setIsLevelUpModalOpen(true);
+  }
+
+  function closeLevelUpModal() {
+    setIsLevelUpModalOpen(false);
   }
 
   function startNewChallenge() {
@@ -109,10 +122,14 @@ export function ChallengeProvider({ children }: ChallengeProviderProps) {
         resetChallenge,
         experienceToNextLevel,
         completeChallenge,
+        closeLevelUpModal,
       }}
     >
       {/* <Component {...pageProps}> trazido como 'children' da função ChallengeProvider */}
       {children}
+
+      {/* Exibe o componente somente se o usuário subir de nível */}
+      { isLevelUpModalOpen && <LevelUpModal />}
     </ChallengeContext.Provider>
   );
 }
