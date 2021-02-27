@@ -1,4 +1,5 @@
 import { createContext, useState, ReactNode, useEffect } from "react";
+// import Cookies from 'js-cookie';
 import challenges from "../../challenges.json";
 
 interface Challenge {
@@ -42,6 +43,13 @@ export function ChallengeProvider({ children }: ChallengeProviderProps) {
     // Solicita permissão para exibir notificações, API do próprio Browser
     Notification.requestPermission();
   }, []);
+
+  // // Salva os dados nos cookies do navegador assim que eles mudam
+  // useEffect(() => {
+  //   Cookies.set('level', String(level));
+  //   Cookies.set('currentExperience', String(currentExperience));
+  //   Cookies.set('challengesCompleted', String(challengesCompleted));
+  // }, [level, currentExperience, challengesCompleted]);
 
   function levelUp() {
     setLevel(level + 1);
