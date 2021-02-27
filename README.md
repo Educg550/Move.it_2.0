@@ -19,6 +19,8 @@ cd Next_Level_Week_4
 
 cd moveit-next
 
+yarn
+
 yarn dev
 ```
 
