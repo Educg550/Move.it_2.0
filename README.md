@@ -1,7 +1,7 @@
 <img src="https://raw.githubusercontent.com/Educg550/Next_Level_Week_4/a5df0d85cf03f8ab55d8f8cf126314a4c2790c4e/moveit-next/public/logo-full.svg" />
 <h3>
 Move.it 2.0 - Aplicação responsiva e funcional para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade (ciclos de 25 minutos de trabalho intenso e 5 minutos de descanso)
-
+<br />
 Novidade! Agora com tela de login para usuários do GitHub (ainda em produção)
 </h3>
 
@@ -37,4 +37,4 @@ Meu caderno com as anotações referentes ao conteúdo da Next Level Week #4 pod
 
 ## 🚀 Next Level Week #4
 
-![nlw4](https://instagram.fcgh10-1.fna.fbcdn.net/v/t51.2885-15/e35/152111451_981027065764653_76265124056744178_n.jpg?_nc_ht=instagram.fcgh10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=eeSwUwjQr-MAX9o9FHD&tp=1&oh=9c3acc7e745375d89166bd36ecea5c7a&oe=60635E22 "nlw4")
+![nlw4](https://instagram.fcgh10-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/155023562_472441813937433_8643711249113367805_n.jpg?tp=1&_nc_ht=instagram.fcgh10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=8bypE40NpGMAX-cB9IG&oh=99ecf2ab04107d4de0d06d01eb43e115&oe=606F58E7 "nlw4")
