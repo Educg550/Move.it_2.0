@@ -1,7 +1,10 @@
-# 🥇 Move.it
-Projeto da Rocketseat da semana #4: Move.it - aplicação para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade (ciclos de 25 minutos de trabalho intenso e 5 minutos de descanso)
+<img src="https://raw.githubusercontent.com/Educg550/Next_Level_Week_4/a5df0d85cf03f8ab55d8f8cf126314a4c2790c4e/moveit-next/public/logo-full.svg" />
+<h3>
+Move.it 2.0 - Aplicação responsiva e funcional para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade (ciclos de 25 minutos de trabalho intenso e 5 minutos de descanso)
 
-![move.it](https://raw.githubusercontent.com/Educg550/Next_Level_Week_4/a5df0d85cf03f8ab55d8f8cf126314a4c2790c4e/moveit-next/public/logo-full.svg "move.it")
+Novidade! Agora com tela de login para usuários do GitHub (ainda em produção)
+</h3>
+
 
 ## 🖥️ Tecnologias Utilizadas
 
