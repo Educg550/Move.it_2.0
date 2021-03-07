@@ -1,5 +1,6 @@
 import React, { createContext, useState, ReactNode, useEffect } from "react";
 import { LevelUpModal } from "../components/LevelUpModal";
+import { Login } from '../components/Login';
 import Cookies from "js-cookie";
 import challenges from "../../challenges.json";
 
@@ -20,6 +21,7 @@ interface ChallengeContextData {
   experienceToNextLevel: number;
   completeChallenge: () => void;
   closeLevelUpModal: () => void;
+  closeLogin: () => void;
 }
 
 // Definição do tipo de elemento children que será importado como argumento na função ChallengeProvider
@@ -42,6 +44,8 @@ export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps)
 
   const [activeChallenge, setActiveChallenge] = useState(null);
   const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
+
+  const [isFirstLogin, setIsFirstLogin] = useState(true);
 
   // Cálculo do XP necessário para subir de nível
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
@@ -66,6 +70,10 @@ export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps)
 
   function closeLevelUpModal() {
     setIsLevelUpModalOpen(false);
+  }
+
+  function closeLogin() {
+    setIsFirstLogin(false);
   }
 
   function startNewChallenge() {
@@ -123,6 +131,7 @@ export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps)
         experienceToNextLevel,
         completeChallenge,
         closeLevelUpModal,
+        closeLogin,
       }}
     >
       {/* <Component {...pageProps}> trazido como 'children' da função ChallengeProvider */}
@@ -130,6 +139,8 @@ export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps)
 
       {/* Exibe o componente somente se o usuário subir de nível */}
       { isLevelUpModalOpen && <LevelUpModal />}
+
+      { isFirstLogin && <Login />}
     </ChallengeContext.Provider>
   );
 }

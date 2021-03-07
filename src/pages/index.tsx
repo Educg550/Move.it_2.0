@@ -7,6 +7,7 @@ import { ProfileData } from "../components/ProfileData";
 import { Cicles } from "../components/Cicles";
 import { Countdown } from "../components/Countdown";
 import { ChallengeBox } from "../components/ChallengeBox";
+import { Login } from '../components/Login';
 import styles from "../styles/pages/Home.module.css";
 
 // Importação dos contextos, para melhor interconexão entre os componentes que fazem parte dos desafios, XP e countdown

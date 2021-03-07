@@ -1,0 +1,69 @@
+.overlay {
+  background: var(--blue);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+}
+
+.container > img {
+  margin-bottom: 6rem;
+  width: 360px;
+  height: 76px;
+}
+
+.userInfo h2 {
+  font: 600 2.5rem "Inter", sans-serif;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.inputText {
+  width: 21rem;
+  height: 5rem;
+  outline: none;
+  background: linear-gradient(90deg, #4953b8 0%, rgba(73, 83, 184, 0.2) 100%);
+  border-radius: 5px 0px 0px 5px;
+  color: var(--white);
+}
+
+.userInfo button {
+  width: 5rem;
+  height: 5rem;
+  outline: none;
+  /* Colocar font-size: 0 quando o botão só tem uma imagem dentro dele */
+  font-size: 0px;
+
+  background: var(--blue-2);
+  border-radius: 0px 5px 5px 0px;
+
+  transition: 0.2s;
+}
+
+.userInfo button:hover {
+  background: var(--green);
+}
+
+.githubLogin {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.githubLogin span {
+  font: 500 1.5rem "Inter", sans-serif;
+  color: var(--blue-text);
+}
+
+.iconContainer {
+  max-width: 768px;
+}
