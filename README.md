@@ -1,10 +1,15 @@
 <img src="https://raw.githubusercontent.com/Educg550/Next_Level_Week_4/a5df0d85cf03f8ab55d8f8cf126314a4c2790c4e/moveit-next/public/logo-full.svg" />
-<h3>
-Move.it 2.0 - Aplicação responsiva e funcional para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade (ciclos de 25 minutos de trabalho intenso e 5 minutos de descanso)
-<br />
-Novidade! Agora com tela de login para usuários do GitHub (ainda em produção)
-</h3>
 
+### Aplicação responsiva e funcional para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade (ciclos de 25 minutos de trabalho intenso e 5 minutos de descanso)
+
+## 🌟 Diferenciais e novidades
+
+* Agora com tela de login para usuários do GitHub (em produção)
+* Ranking de usuários (ainda não iniciado)
+* Configurações e theme changer (ainda não iniciado)
+* Compartilhar nível e progresso nas redes sociais (ainda não iniciado)
+
+O layout oficial do Move.it 2.0 pode ser acessado na plataforma __Figma__ através [deste link](https://www.figma.com/file/AOkfgVuSTgJiOxa7eQ4Ary/Move.it-2.0?node-id=160%3A2761)
 
 ## 🖥️ Tecnologias Utilizadas
 
