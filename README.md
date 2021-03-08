@@ -4,7 +4,7 @@
 
 ## 🌟 Diferenciais e novidades
 
-* Agora com tela de login para usuários do GitHub (em produção)
+* Agora com tela de login para usuários do GitHub
 * Ranking de usuários (ainda não iniciado)
 * Configurações e theme changer (ainda não iniciado)
 * Compartilhar nível e progresso nas redes sociais (ainda não iniciado)
