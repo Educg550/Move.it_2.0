@@ -3,7 +3,7 @@ import { ChallengeContext } from "../contexts/ChallengeContext";
 import { useContext } from "react";
 
 export function Login() {
-  const { closeLogin } = useContext(ChallengeContext);
+  const { closeLogin, username, setUsername } = useContext(ChallengeContext);
 
   return (
     <div className={styles.overlay}>
@@ -30,6 +30,7 @@ export function Login() {
               type="text"
               placeholder="Digite seu username"
               className={styles.inputText}
+              id="username"
             />
             <button type="submit" onClick={closeLogin}>
               <img src="icons/next-arrow.svg" alt="" />

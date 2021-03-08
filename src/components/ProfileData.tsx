@@ -4,13 +4,13 @@ import { ChallengeContext } from '../contexts/ChallengeContext';
 import styles from '../styles/components/ProfileData.module.css'
 
 export function ProfileData () {
-    const { level } = useContext(ChallengeContext);
+    const { level, username } = useContext(ChallengeContext);
 
     return (
         <div className={styles.profileData}>
-            <img src="https://github.com/Educg550.png" alt="Eduardo Cruz Guedes" />
+            <img src={`https://github.com/${username}.png`} alt="Eduardo Cruz Guedes" />
             <div>
-                <strong>Educg550</strong>
+                <strong>{username}</strong>
                 <p>
                     <img src="icons/level.svg" alt=""/> 
                     Level {level}

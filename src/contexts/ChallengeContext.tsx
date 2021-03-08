@@ -1,6 +1,6 @@
 import React, { createContext, useState, ReactNode, useEffect } from "react";
 import { LevelUpModal } from "../components/LevelUpModal";
-import { Login } from '../components/Login';
+import { Login } from "../components/Login";
 import Cookies from "js-cookie";
 import challenges from "../../challenges.json";
 
@@ -22,6 +22,7 @@ interface ChallengeContextData {
   completeChallenge: () => void;
   closeLevelUpModal: () => void;
   closeLogin: () => void;
+  username: string;
 }
 
 // Definição do tipo de elemento children que será importado como argumento na função ChallengeProvider
@@ -36,16 +37,24 @@ interface ChallengeProviderProps {
 export const ChallengeContext = createContext({} as ChallengeContextData);
 
 // ...rest = rest operator - recebe o resto das propriedades de uma interface ou type
-export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps) {
+export function ChallengeProvider({
+  children,
+  ...rest
+}: ChallengeProviderProps) {
   // ?? - se não existir rest.level, ele colocará o valor da direita
   const [level, setLevel] = useState(rest.level ?? 1);
-  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
-  const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
+  const [currentExperience, setCurrentExperience] = useState(
+    rest.currentExperience ?? 0
+  );
+  const [challengesCompleted, setChallengesCompleted] = useState(
+    rest.challengesCompleted ?? 0
+  );
 
   const [activeChallenge, setActiveChallenge] = useState(null);
   const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
   const [isFirstLogin, setIsFirstLogin] = useState(true);
+  const [username, setUsername] = useState("");
 
   // Cálculo do XP necessário para subir de nível
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
@@ -74,6 +83,8 @@ export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps)
 
   function closeLogin() {
     setIsFirstLogin(false);
+    const usernametxt = String(document.getElementById("username").value);
+    setUsername(usernametxt);
   }
 
   function startNewChallenge() {
@@ -132,15 +143,16 @@ export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps)
         completeChallenge,
         closeLevelUpModal,
         closeLogin,
+        username,
       }}
     >
       {/* <Component {...pageProps}> trazido como 'children' da função ChallengeProvider */}
       {children}
 
       {/* Exibe o componente somente se o usuário subir de nível */}
-      { isLevelUpModalOpen && <LevelUpModal />}
+      {isLevelUpModalOpen && <LevelUpModal />}
 
-      { isFirstLogin && <Login />}
+      {isFirstLogin && <Login />}
     </ChallengeContext.Provider>
   );
 }
