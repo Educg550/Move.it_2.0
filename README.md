@@ -21,9 +21,9 @@ O layout oficial do Move.it 2.0 pode ser acessado na plataforma __Figma__ atrav�
 Primeiramente, é necessário ter o [Git](https://git-scm.com/downloads), o [Node.js](https://nodejs.org/en/download/) e o [Yarn](https://yarnpkg.com/) instalados no seu sistema. Assim que esse pré-requisito for atendido, basta executar estes comandos, um a um, no seu Terminal ou Shell de preferência:
 
 ```
-git clone https://github.com/Educg550/Next_Level_Week_4.git
+git clone https://github.com/Educg550/Move.it_2.0.git
 
-cd Next_Level_Week_4
+cd Move.it_2.0
 
 yarn
 
