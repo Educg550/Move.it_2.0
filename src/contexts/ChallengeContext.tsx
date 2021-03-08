@@ -82,9 +82,14 @@ export function ChallengeProvider({
   }
 
   function closeLogin() {
-    setIsFirstLogin(false);
     const usernametxt = String(document.getElementById("username").value);
-    setUsername(usernametxt);
+
+    if (usernametxt != "") {
+      setUsername(usernametxt);
+      setIsFirstLogin(false);
+    } else {
+      alert('Nome de usuário não preenchido!');
+    }
   }
 
   function startNewChallenge() {

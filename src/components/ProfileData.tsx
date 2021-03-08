@@ -8,7 +8,7 @@ export function ProfileData () {
 
     return (
         <div className={styles.profileData}>
-            <img src={`https://github.com/${username}.png`} alt="Eduardo Cruz Guedes" />
+            <img src={`https://github.com/${username}.png`} alt="User Picture" />
             <div>
                 <strong>{username}</strong>
                 <p>

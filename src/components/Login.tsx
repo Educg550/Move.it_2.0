@@ -3,10 +3,10 @@ import { ChallengeContext } from "../contexts/ChallengeContext";
 import { useContext } from "react";
 
 export function Login() {
-  const { closeLogin, username, setUsername } = useContext(ChallengeContext);
+  const { closeLogin } = useContext(ChallengeContext);
 
   return (
-    <div className={styles.overlay}>
+    <div className={styles.bg}>
       <div className={styles.iconContainer}>
         <img src="icons/icon-login.svg" alt="" />
       </div>
@@ -25,12 +25,13 @@ export function Login() {
             <span>Faça login com seu GitHub para começar</span>
           </div>
 
-          <form>
+          <form className={styles.input}>
             <input
               type="text"
               placeholder="Digite seu username"
               className={styles.inputText}
               id="username"
+              required
             />
             <button type="submit" onClick={closeLogin}>
               <img src="icons/next-arrow.svg" alt="" />
