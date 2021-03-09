@@ -25,7 +25,7 @@ export function Login() {
             <span>Faça login com seu GitHub para começar</span>
           </div>
 
-          <form className={styles.input}>
+          <div className={styles.input}>
             <input
               type="text"
               placeholder="Digite seu username"
@@ -36,7 +36,7 @@ export function Login() {
             <button type="submit" onClick={closeLogin}>
               <img src="icons/next-arrow.svg" alt="" />
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
