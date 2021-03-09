@@ -88,7 +88,7 @@ export function ChallengeProvider({
       setUsername(usernametxt);
       setIsFirstLogin(false);
     } else {
-      alert('Nome de usuário não preenchido!');
+      alert("Nome de usuário não preenchido!");
     }
   }
 
