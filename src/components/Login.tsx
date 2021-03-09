@@ -1,9 +1,27 @@
 import styles from "../styles/components/Login.module.css";
 import { ChallengeContext } from "../contexts/ChallengeContext";
 import { useContext } from "react";
+import { useForm } from "react-hook-form";
+
+interface ProfileSubmit {
+  username: string;
+}
 
 export function Login() {
-  const { closeLogin } = useContext(ChallengeContext);
+  const { closeLogin, changeUsername } = useContext(ChallengeContext);
+  const { register, handleSubmit } = useForm<ProfileSubmit>();
+
+  const onSubmit = handleSubmit((data) => {
+    const usernametxt = data.username;
+    console.log(usernametxt)
+
+    if (usernametxt != "") {
+      changeUsername(usernametxt);
+      closeLogin();
+    } else {
+      alert("Nome de usuário não preenchido!");
+    }
+  })
 
   return (
     <div className={styles.bg}>
@@ -25,18 +43,20 @@ export function Login() {
             <span>Faça login com seu GitHub para começar</span>
           </div>
 
-          <div className={styles.input}>
+          <form className={styles.input} onSubmit={onSubmit}>
             <input
               type="text"
               placeholder="Digite seu username"
               className={styles.inputText}
               id="username"
+              name="username"
+              ref={register}
               required
             />
-            <button type="submit" onClick={closeLogin}>
+            <button type="submit">
               <img src="icons/next-arrow.svg" alt="" />
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ import { ProfileData } from "../components/ProfileData";
 import { Cicles } from "../components/Cicles";
 import { Countdown } from "../components/Countdown";
 import { ChallengeBox } from "../components/ChallengeBox";
-import { Login } from '../components/Login';
+import { SideBar } from "../components/SideBar";
 import styles from "../styles/pages/Home.module.css";
 
 // Importação dos contextos, para melhor interconexão entre os componentes que fazem parte dos desafios, XP e countdown
@@ -22,10 +22,10 @@ interface HomeProps {
 
 export default function Home(props: HomeProps) {
   return (
-    <ChallengeProvider 
-    level={props.level} 
-    currentExperience={props.currentExperience}
-    challengesCompleted={props.challengesCompleted}
+    <ChallengeProvider
+      level={props.level}
+      currentExperience={props.currentExperience}
+      challengesCompleted={props.challengesCompleted}
     >
       <div className={styles.container}>
         <Head>
@@ -35,6 +35,12 @@ export default function Home(props: HomeProps) {
         {/* Componentes e suas propriedades declaradas e exportadas nos arquivos de mesmo nome dentro da pasta ./components */}
         <Header />
         <ExperienceBar />
+
+        {/* <section>
+          <div>
+            <SideBar />
+          </div>
+        </section> */}
 
         <CountdownProvider>
           <section>

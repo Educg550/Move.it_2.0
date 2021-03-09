@@ -23,6 +23,7 @@ interface ChallengeContextData {
   closeLevelUpModal: () => void;
   closeLogin: () => void;
   username: string;
+  changeUsername: (usrname: string) => void;
 }
 
 // Definição do tipo de elemento children que será importado como argumento na função ChallengeProvider
@@ -82,14 +83,11 @@ export function ChallengeProvider({
   }
 
   function closeLogin() {
-    const usernametxt = String(document.getElementById("username").value);
+    setIsFirstLogin(false);
+  }
 
-    if (usernametxt != "") {
-      setUsername(usernametxt);
-      setIsFirstLogin(false);
-    } else {
-      alert("Nome de usuário não preenchido!");
-    }
+  function changeUsername(usrname: string) {
+    setUsername(usrname);
   }
 
   function startNewChallenge() {
@@ -149,6 +147,7 @@ export function ChallengeProvider({
         closeLevelUpModal,
         closeLogin,
         username,
+        changeUsername,
       }}
     >
       {/* <Component {...pageProps}> trazido como 'children' da função ChallengeProvider */}
