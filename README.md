@@ -9,12 +9,12 @@ Aplicação responsiva e funcional para foco e bem-estar digital utilizando a me
 
 ## 🌟 Diferenciais e novidades
 
-* Agora com tela de login para usuários do GitHub
-* Ranking de usuários (ainda não iniciado)
-* Configurações e theme changer (ainda não iniciado)
-* Compartilhar nível e progresso nas redes sociais (ainda não iniciado)
+- [x] Tela de login para usuários do GitHub
+- [ ] Ranking de usuários
+- [ ] Configurações e theme changer
+- [ ] Compartilhar nível e progresso nas redes sociais
 
-O layout oficial do Move.it 2.0 pode ser acessado na plataforma __Figma__ através [deste link](https://www.figma.com/file/AOkfgVuSTgJiOxa7eQ4Ary/Move.it-2.0?node-id=160%3A2761)
+O layout final do Move.it 2.0 pode ser acessado na plataforma __Figma__ através [deste link](https://www.figma.com/file/AOkfgVuSTgJiOxa7eQ4Ary/Move.it-2.0?node-id=160%3A2761)
 
 ## 🖥️ Tecnologias Utilizadas
 
