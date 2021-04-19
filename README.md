@@ -3,7 +3,7 @@
 </h3>
 
 <h3 align="center">
-Aplicação responsiva e funcional para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade (ciclos de 25 minutos de trabalho intenso e 5 minutos de descanso)
+Aplicação responsiva e funcional para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade
 </h3>
 
 
