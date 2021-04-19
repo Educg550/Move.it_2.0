@@ -1,5 +1,5 @@
 <h3 align="center">
-<img src="https://raw.githubusercontent.com/Educg550/Next_Level_Week_4/a5df0d85cf03f8ab55d8f8cf126314a4c2790c4e/moveit-next/public/logo-full.svg" />
+<img src="public/logo-full.svg" />
 </h3>
 
 <h3 align="center">
@@ -47,4 +47,4 @@ Meu caderno com as anotações referentes ao conteúdo da Next Level Week #4 pod
 
 ## 🚀 Next Level Week #4
 
-![nlw4](public/nlw#4.jpg "nlw4")
+![nlw4](public/nlw4.jpg "nlw4")
