@@ -47,4 +47,4 @@ Meu caderno com as anotações referentes ao conteúdo da Next Level Week #4 pod
 
 ## 🚀 Next Level Week #4
 
-![nlw4](https://instagram.fcgh10-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/155023562_472441813937433_8643711249113367805_n.jpg?tp=1&_nc_ht=instagram.fcgh10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=8bypE40NpGMAX-cB9IG&oh=99ecf2ab04107d4de0d06d01eb43e115&oe=606F58E7 "nlw4")
+![nlw4](public/nlw#4.jpg "nlw4")
