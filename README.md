@@ -1,9 +1,13 @@
 <h3 align="center">
-<img src="public/logo-full.svg" />
+  <img src="https://raw.githubusercontent.com/guilhermecapitao/nlw04-moveit-web/master/.github/moveit.svg" />
 </h3>
 
 <h3 align="center">
-Aplicação responsiva e funcional para foco e bem-estar digital utilizando a metodologia Pomodoro de produtividade
+  <img src="public/logo-full.svg" />
+</h3>
+
+<h3 align="center">
+  Move.it | Mantenha-se em foco e melhore seu bem-estar digital, utilizando a metodologia Pomodoro de produtividade
 </h3>
 
 
@@ -26,13 +30,20 @@ O layout final do Move.it 2.0 pode ser acessado na plataforma __Figma__ através
 Primeiramente, é necessário ter o [Git](https://git-scm.com/downloads), o [Node.js](https://nodejs.org/en/download/) e o [Yarn](https://yarnpkg.com/) instalados no seu sistema. Assim que esse pré-requisito for atendido, basta executar estes comandos, um a um, no seu Terminal ou Shell de preferência:
 
 ```
+# Clone the repository
 git clone https://github.com/Educg550/Move.it_2.0.git
 
+# Enter in the project folder
 cd Move.it_2.0
 
+# Install dependencies
 yarn
 
-yarn dev
+# Compile the latest build
+yarn build
+
+# Start the project
+yarn start
 ```
 
 Assim que o servidor for iniciado, ele será hospedado no seguinte endereço: ```localhost:3000```
