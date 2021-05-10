@@ -1,9 +1,7 @@
 <h3 align="center">
   <img src="https://raw.githubusercontent.com/guilhermecapitao/nlw04-moveit-web/master/.github/moveit.svg" />
-</h3>
-
-<h3 align="center">
   <img src="public/logo-full.svg" />
+  <hr />
 </h3>
 
 <h3 align="center">
